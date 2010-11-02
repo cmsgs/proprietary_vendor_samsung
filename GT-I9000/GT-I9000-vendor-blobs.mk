@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
     vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld \
-    vendor/samsung/GT-I9000/proprietary/bin/BCM4329B1_002.002.023.0417.0435.hcd:system/bin/BCM4329B1_002.002.023.0417.0435.hcd
+    vendor/samsung/GT-I9000/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd
 
 #
 # DHCPCD
