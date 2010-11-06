@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/csc/others.xml:system/csc/others.xml \
     vendor/samsung/GT-I9000/proprietary/csc/sales_code.dat:system/csc/sales_code.dat \
     vendor/samsung/GT-I9000/proprietary/CSCVersion.txt:system/CSCVersion.txt \
+    vendor/samsung/GT-I9000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml \
     vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
     vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
@@ -79,6 +80,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
     vendor/samsung/GT-I9000/proprietary/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so \
+    vendor/samsung/GT-I9000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
@@ -129,4 +131,21 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so \
     vendor/samsung/GT-I9000/proprietary/SW_Configuration.xml:system/SW_Configuration.xml \
     vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
+#
+# TESTING
+#
+PRODUCT_COPY_FILES += \
+   vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so \
+   vendor/samsung/GT-I9000/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
+
+#
+# Sensors
+#
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-I9000/proprietary/bin/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \
+    vendor/samsung/GT-I9000/proprietary/bin/sensorserver_yamaha:system/bin/sensorserver_yamaha \
+    vendor/samsung/GT-I9000/proprietary/bin/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha \
+    vendor/samsung/GT-I9000/proprietary/lib/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so
 
