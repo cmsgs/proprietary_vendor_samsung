@@ -31,7 +31,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
-    vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/SPH-D700/proprietary/lib/libwibropath.so:system/lib/libwibropath.so \
@@ -49,9 +48,23 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/bin/wlp2pservice:system/bin/wlp2pservice \
 	vendor/samsung/SPH-D700/proprietary/bin/btld:system/bin/btld \
 	vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0435.hcd:system/bin/BCM4329B1_002.002.023.0417.0435.hcd \
-	vendor/samsung/SPH-D700/proprietary/bin/udhcpd:system/bin/udtcpd \
+	vendor/samsung/SPH-D700/proprietary/bin/mfgloader:system/bin/mfgloader \
+	vendor/samsung/SPH-D700/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
+	vendor/samsung/SPH-D700/proprietary/bin/hciattach:system/bin/hciattach \
+	vendor/samsung/SPH-D700/proprietary/bin/npsmobex:system/bin/npsmobex \
     vendor/samsung/SPH-D700/proprietary/bin/wlservice:system/bin/wlservice
 
+#
+# DHCPCD
+#
+PRODUCT_COPY_FILES += \\
+	vendor/samsung/SPH-D700/proprietary/bin/dhcpcd:system/bin/dhcpcd \
+	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
+	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
+	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured \
+	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks \
+	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
+	
 #
 # Display (3D)
 #
@@ -75,7 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so \
     vendor/samsung/SPH-D700/proprietary/lib/hw/lights.default.so:system/lib/hw/lights.default.so \
     vendor/samsung/SPH-D700/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so 
-#   vendor/samsung/SPH-D700/proprietary/lib/hw/sensors.SPH-D700.so:system/lib/hw/sensors.SPH-D700.so 
+   vendor/samsung/SPH-D700/proprietary/lib/hw/sensors.SPH-D700.so:system/lib/hw/sensors.SPH-D700.so 
 	
 #
 # Camera
@@ -160,13 +173,13 @@ PRODUCT_COPY_FILES += \
 #
 #Sensors
 #
-#PRODUCT_COPY_FILES += \
-#	vendor/samsung/SPH-D700/proprietary/lib/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
-#	vendor/samsung/SPH-D700/proprietary/lib/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \
-#	vendor/samsung/SPH-D700/proprietary/lib/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \
-#	vendor/samsung/SPH-D700/proprietary/bin/sensorserver_yamaha:system/bin/sensorserver_yamaha \
-#	vendor/samsung/SPH-D700/proprietary/bin/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \
-#	vendor/samsung/SPH-D700/proprietary/bin/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha
+PRODUCT_COPY_FILES += \
+	vendor/samsung/SPH-D700/proprietary/lib/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
+	vendor/samsung/SPH-D700/proprietary/lib/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \
+	vendor/samsung/SPH-D700/proprietary/lib/libms3c_yamaha.so:system/lib/libms3c_yamaha.so \
+	vendor/samsung/SPH-D700/proprietary/bin/sensorserver_yamaha:system/bin/sensorserver_yamaha \
+	vendor/samsung/SPH-D700/proprietary/bin/sensorcalibutil_yamaha:system/bin/sensorcalibutil_yamaha \
+	vendor/samsung/SPH-D700/proprietary/bin/sensorstatutil_yamaha:system/bin/sensorstatutil_yamaha
 
 #
 # WIMAX FOR VICTORY!
@@ -189,4 +202,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/bin/immvbsd:system/bin/immvbsd \
 	vendor/samsung/SPH-D700/proprietary/bin/immvibed:system/bin/immvibed \
-	vendor/samsung/SPH-D700/proprietary/bin/racoon:system/bin/racoon
+	vendor/samsung/SPH-D700/proprietary/bin/racoon:system/bin/racoon \
+	vendor/samsung/SPH-D700/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so \
+	vendor/samsung/SPH-D700/proprietary/lib/libhardware.so:system/lib/libhardware.so \
+	vendor/samsung/SPH-D700/proprietary/lib/libnetutils.so:system/lib/libnetutils.so
