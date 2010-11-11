@@ -51,13 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/vold:system/bin/vold \
     vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
     vendor/samsung/GT-I9000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
-    vendor/samsung/GT-I9000/proprietary/csc/contents.db:system/csc/contents.db \
-    vendor/samsung/GT-I9000/proprietary/csc/customer.xml:system/csc/customer.xml \
-    vendor/samsung/GT-I9000/proprietary/csc/feature.xml:system/csc/feature.xml \
-    vendor/samsung/GT-I9000/proprietary/CSCFiles.txt:system/CSCFiles.txt \
-    vendor/samsung/GT-I9000/proprietary/csc/others.xml:system/csc/others.xml \
-    vendor/samsung/GT-I9000/proprietary/csc/sales_code.dat:system/csc/sales_code.dat \
-    vendor/samsung/GT-I9000/proprietary/CSCVersion.txt:system/CSCVersion.txt \
     vendor/samsung/GT-I9000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml \
     vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
     vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
@@ -129,14 +122,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
     vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:system/lib/libtvout.so \
     vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so \
-    vendor/samsung/GT-I9000/proprietary/SW_Configuration.xml:system/SW_Configuration.xml \
-    vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
-#
-# TESTING
-#
-PRODUCT_COPY_FILES += \
-   vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so \
-   vendor/samsung/GT-I9000/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
+    vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
 
 #
 # Sensors
