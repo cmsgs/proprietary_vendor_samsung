@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
     vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:obj/lib/libtvout.so
 
 
@@ -133,8 +134,9 @@ PRODUCT_COPY_FILES += \
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so 
-#    vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:system/lib/libcamera.so 
+    vendor/samsung/GT-I9000/proprietary/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so 
 #    vendor/samsung/GT-I9000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so 
 #    vendor/samsung/GT-I9000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so 
 #   vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
@@ -160,7 +162,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
     vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
     vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
