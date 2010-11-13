@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so \
     vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:obj/lib/libtvout.so
 
 
@@ -136,23 +136,28 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/GT-I9000/proprietary/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
     vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so 
-#    vendor/samsung/GT-I9000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so 
-#    vendor/samsung/GT-I9000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so 
-#   vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
+
+
+
 
 #
 #TVOUT
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:system/lib/libtvout.so \
+    vendor/samsung/GT-I9000/proprietary/lib/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libtvoutfimc.so:system/lib/libtvoutfimc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libtvouthdmi.so:system/lib/libtvouthdmi.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
     vendor/samsung/GT-I9000/proprietary/bin/tvoutserver:system/bin/tvoutserver 
 
-#    vendor/samsung/GT-I9000/proprietary/lib/lib_tvoutengine.so:system/lib/lib_tvoutengine.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libtvoutfimc.so:system/lib/libtvoutfimc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libtvouthdmi.so:system/lib/libtvouthdmi.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:system/lib/libtvout.so \
+
+
 
 #
 #Samsung Media decoding libs
