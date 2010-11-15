@@ -60,13 +60,24 @@ PRODUCT_COPY_FILES += \
 #
 # DHCPCD
 #
-PRODUCT_COPY_FILES += \\
+PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/bin/dhcpcd:system/bin/dhcpcd \
 	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
 	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
 	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured \
 	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks \
 	vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
+	
+#
+# Firmware files
+#
+PRODUCT_COPY_FILES += \
+    vendor/samsung/SPH-D700/proprietary/firmware/CE147F00.bin:system/firmware/CE147F00.bin \
+    vendor/samsung/SPH-D700/proprietary/firmware/CE147F01.bin:system/firmware/CE147F01.bin \
+    vendor/samsung/SPH-D700/proprietary/firmware/CE147F02.bin:system/firmware/CE147F02.bin \
+    vendor/samsung/SPH-D700/proprietary/firmware/CE147F03.bin:system/firmware/CE147F03.bin
+
+
 	
 #
 # Display (3D)
@@ -101,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
     vendor/samsung/SPH-D700/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/SPH-D700/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+	vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \ 
     vendor/samsung/SPH-D700/proprietary/lib/libseccamera.so:system/lib/libseccamera.so
 
 #
@@ -113,11 +125,24 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/bin/drexe:system/bin/drexe \
     vendor/samsung/SPH-D700/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/SPH-D700/proprietary/bin/rilclient-test:system/bin/rilclient-test
+	vendor/samsung/GT-I9000/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so
+
+
 
 #
 # GPS
 #
 PRODUCT_COPY_FILES += \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/66ca3eb6.0:system/bin/gpsd/66ca3eb6.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/7651b327.0:system/bin/gpsd/7651b327.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/803ca020.0:system/bin/gpsd/803ca020.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/8c7fccef.0:system/bin/gpsd/8c7fccef.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/c9dbfc2e.0:system/bin/gpsd/c9dbfc2e.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/ddc328ff.0:system/bin/gpsd/ddc328ff.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/ed62f4e3.0:system/bin/gpsd/ed62f4e3.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/f0b6e66f.0:system/bin/gpsd/f0b6e66f.0 \
+    vendor/samsung/SPH-D700/proprietary/bin/gpsd/glgps_samsungJupiter:system/bin/gpsd/glgps_samsungJupiter \
+    vendor/samsung/SPH-D700/proprietary/etc/jupiter.xml:system/etc/jupiter.xml \
     vendor/samsung/SPH-D700/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/samsung/SPH-D700/proprietary/lib/libsecgps.so:system/lib/libsecgps.so
 
@@ -204,6 +229,7 @@ PRODUCT_COPY_FILES += \
 #
 PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/bin/immvbsd:system/bin/immvbsd \
+	vendor/samsung/GT-I9000/proprietary/bin/logwrapper:system/bin/logwrapper \
 	vendor/samsung/SPH-D700/proprietary/bin/immvibed:system/bin/immvibed \
 	vendor/samsung/SPH-D700/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so \
 	vendor/samsung/SPH-D700/proprietary/bin/killmediaserver:system/bin/killmediaserver \
@@ -211,3 +237,33 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/bin/vold:system/bin/vold \
     vendor/samsung/SPH-D700/proprietary/bin/notified_event:system/bin/notified_event \
 	vendor/samsung/SPH-D700/proprietary/lib/libnetutils.so:system/lib/libnetutils.so
+
+#
+# Files for battery charging screen
+#
+	
+PRODUCT_COPY_FILES += \
+    vendor/samsung/SPH-D700/proprietary/bin/playlpm:system/bin/playlpm \
+    vendor/samsung/SPH-D700/proprietary/bin/charging_mode:system/bin/charging_mode \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
+    vendor/samsung/SPH-D700/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg
