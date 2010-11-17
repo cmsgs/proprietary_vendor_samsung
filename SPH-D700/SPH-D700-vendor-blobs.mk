@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/SPH-D700/proprietary/lib/libwibropath.so:system/lib/libwibropath.so \
     vendor/samsung/SPH-D700/proprietary/lib/libwlservice.so:system/lib/libwlservice.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwldhcp.so:system/lib/libwldhcp.so \
     vendor/samsung/SPH-D700/proprietary/lib/libwifitest.so:system/lib/libwifitest.so \
     vendor/samsung/SPH-D700/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
     vendor/samsung/SPH-D700/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
