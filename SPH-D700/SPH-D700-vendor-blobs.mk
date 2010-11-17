@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/lib/libgps.so:obj/lib/libgps.so \
     vendor/samsung/SPH-D700/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so \
     vendor/samsung/SPH-D700/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/SPH-D700/proprietary/lib/libs3cjpeg.so:obj/libs3cjpeg.so \
     vendor/samsung/SPH-D700/proprietary/lib/libtvout.so:obj/lib/libtvout.so \
     vendor/samsung/SPH-D700/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so 
 
@@ -40,11 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/lib/libwlservice.so:system/lib/libwlservice.so \
     vendor/samsung/SPH-D700/proprietary/lib/libwldhcp.so:system/lib/libwldhcp.so \
     vendor/samsung/SPH-D700/proprietary/lib/libwifitest.so:system/lib/libwifitest.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwlp2p.so:system/lib/libwlp2p.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwlp2pclient.so:system/lib/libwlp2pclient.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwlp2penablejni.so:system/lib/libwlp2penablejni.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwlwps.so:system/lib/libwlwps.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwlwpscli.so:system/lib/libwlwpscli.so \
     vendor/samsung/SPH-D700/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
     vendor/samsung/SPH-D700/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
 	vendor/samsung/SPH-D700/proprietary/bin/wpa_cli:system/bin/wpa_cli \
@@ -100,9 +95,9 @@ PRODUCT_COPY_FILES += \
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so \
-    vendor/samsung/SPH-D700/proprietary/lib/hw/lights.default.so:system/lib/hw/lights.default.so \
+    vendor/samsung/SPH-D700/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so \
     vendor/samsung/SPH-D700/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \
-    vendor/samsung/SPH-D700/proprietary/lib/hw/sensors.SPH-D700.so:system/lib/hw/sensors.SPH-D700.so 
+    vendor/samsung/SPH-D700/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so 
 	
 #
 # Camera
