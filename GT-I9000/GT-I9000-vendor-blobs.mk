@@ -134,8 +134,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/GT-I9000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/GT-I9000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so 
-#    vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+#   vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
 
 
 
