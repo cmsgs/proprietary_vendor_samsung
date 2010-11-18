@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/bin/wpa_cli:system/bin/wpa_cli \
 	vendor/samsung/SPH-D700/proprietary/bin/wlp2pservice:system/bin/wlp2pservice \
 	vendor/samsung/SPH-D700/proprietary/bin/btld:system/bin/btld \
-	vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0435.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
+	vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
 	vendor/samsung/SPH-D700/proprietary/bin/mfgloader:system/bin/mfgloader \
 	vendor/samsung/SPH-D700/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
 	vendor/samsung/SPH-D700/proprietary/bin/hciattach:system/bin/hciattach \
