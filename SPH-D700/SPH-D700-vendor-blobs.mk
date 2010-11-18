@@ -105,8 +105,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/lib/libcamerafirmwarejni.so:system/lib/libcamerafirmwarejni.so \
     vendor/samsung/SPH-D700/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/SPH-D700/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-	vendor/samsung/SPH-D700/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \ 
-    vendor/samsung/SPH-D700/proprietary/lib/libseccamera.so:system/lib/libseccamera.so
+	vendor/samsung/SPH-D700/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/SPH-D700/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+	vendor/samsung/SPH-D700/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/SPH-D700/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
 #
 # RIL
