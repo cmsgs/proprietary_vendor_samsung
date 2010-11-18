@@ -44,11 +44,10 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/bin/wpa_cli:system/bin/wpa_cli \
 	vendor/samsung/SPH-D700/proprietary/bin/wlp2pservice:system/bin/wlp2pservice \
 	vendor/samsung/SPH-D700/proprietary/bin/btld:system/bin/btld \
-	vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0435.hcd:system/bin/BCM4329B1_002.002.023.0417.0435.hcd \
+	vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0435.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
 	vendor/samsung/SPH-D700/proprietary/bin/mfgloader:system/bin/mfgloader \
 	vendor/samsung/SPH-D700/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
 	vendor/samsung/SPH-D700/proprietary/bin/hciattach:system/bin/hciattach \
-	vendor/samsung/SPH-D700/proprietary/bin/npsmobex:system/bin/npsmobex \
     vendor/samsung/SPH-D700/proprietary/bin/wlservice:system/bin/wlservice
 
 #
@@ -127,16 +126,6 @@ PRODUCT_COPY_FILES += \
 # GPS
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/66ca3eb6.0:system/bin/gpsd/66ca3eb6.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/7651b327.0:system/bin/gpsd/7651b327.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/803ca020.0:system/bin/gpsd/803ca020.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/8c7fccef.0:system/bin/gpsd/8c7fccef.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/c9dbfc2e.0:system/bin/gpsd/c9dbfc2e.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/ddc328ff.0:system/bin/gpsd/ddc328ff.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/ed62f4e3.0:system/bin/gpsd/ed62f4e3.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/f0b6e66f.0:system/bin/gpsd/f0b6e66f.0 \
-    vendor/samsung/SPH-D700/proprietary/bin/gpsd/glgps_samsungJupiter:system/bin/gpsd/glgps_samsungJupiter \
-    vendor/samsung/SPH-D700/proprietary/etc/jupiter.xml:system/etc/jupiter.xml \
     vendor/samsung/SPH-D700/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/samsung/SPH-D700/proprietary/lib/libsecgps.so:system/lib/libsecgps.so
 
