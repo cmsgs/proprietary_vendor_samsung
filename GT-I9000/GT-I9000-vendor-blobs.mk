@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/firmware/CE147F03.bin:system/firmware/CE147F03.bin 
 
 #
-#GPS
+# GPS
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/gpsd/66ca3eb6.0:system/bin/gpsd/66ca3eb6.0 \
@@ -63,12 +63,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:system/lib/libsecgps.so 
  
-
-
 #
-#WIFI
+# WIFI
 #
 PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-I9000/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
@@ -77,19 +76,22 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     vendor/samsung/GT-I9000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
+    vendor/samsung/GT-I9000/proprietary/bin/dhcpcd:system/bin/dhcpcd \
+    vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
     vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so 
 
 #
-#Bluetooth
+# Bluetooth
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
+    vendor/samsung/GT-I9000/proprietary/bin/npsmobex:system/bin/npsmobex \
     vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld 
 
 #
 # Grafics
 #
 PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-I9000/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/samsung/GT-I9000/proprietary/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so \
     vendor/samsung/GT-I9000/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/GT-I9000/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
@@ -105,20 +107,16 @@ PRODUCT_COPY_FILES += \
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
-    vendor/samsung/GT-I9000/proprietary/bin/dhcpcd:system/bin/dhcpcd \
     vendor/samsung/GT-I9000/proprietary/bin/killmediaserver:system/bin/killmediaserver \
     vendor/samsung/GT-I9000/proprietary/bin/logwrapper:system/bin/logwrapper \
     vendor/samsung/GT-I9000/proprietary/bin/mfgloader:system/bin/mfgloader \
     vendor/samsung/GT-I9000/proprietary/bin/notified_event:system/bin/notified_event \
-    vendor/samsung/GT-I9000/proprietary/bin/npsmobex:system/bin/npsmobex \
-    vendor/samsung/GT-I9000/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
     vendor/samsung/GT-I9000/proprietary/bin/vold:system/bin/vold \
-    vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
     vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
 
 
 #
-#Samsung config
+# Samsung config
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
@@ -128,7 +126,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks
 
 #
-#camera
+# camera
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
@@ -136,14 +134,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/GT-I9000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/GT-I9000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so 
-#    vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
-
-
-
+    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
+    vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+#   vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
 
 #
-#TVOUT
+# TVOUT
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libtvoutservice.so:system/lib/libtvoutservice.so \
@@ -154,30 +151,30 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libtvout_jni.so:system/lib/libtvout_jni.so \
     vendor/samsung/GT-I9000/proprietary/bin/tvoutserver:system/bin/tvoutserver 
 
+#
+# Samsung Media decoding libs
+#
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/GT-I9000/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so 
 
-#
-#Samsung Media decoding libs
-#
-PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so 
 
 #
 # TESTING
@@ -203,7 +200,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so
 
 #
-#investigation needed
+# investigation needed
 #
 
 PRODUCT_COPY_FILES += \
