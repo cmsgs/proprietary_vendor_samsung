@@ -174,7 +174,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
     vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
     vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so
 
