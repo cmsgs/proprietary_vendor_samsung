@@ -36,13 +36,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
     vendor/samsung/SPH-D700/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/SPH-D700/proprietary/lib/libwibropath.so:system/lib/libwibropath.so \
     vendor/samsung/SPH-D700/proprietary/lib/libwlservice.so:system/lib/libwlservice.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwifitest.so:system/lib/libwifitest.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
     vendor/samsung/SPH-D700/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
-	vendor/samsung/SPH-D700/proprietary/bin/wpa_cli:system/bin/wpa_cli \
-	vendor/samsung/SPH-D700/proprietary/bin/wlp2pservice:system/bin/wlp2pservice \
 	vendor/samsung/SPH-D700/proprietary/bin/btld:system/bin/btld \
 	vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
 	vendor/samsung/SPH-D700/proprietary/bin/mfgloader:system/bin/mfgloader \
@@ -131,29 +126,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/SPH-D700/proprietary/lib/libgps.so:system/lib/libgps.so \
     vendor/samsung/SPH-D700/proprietary/lib/libsecgps.so:system/lib/libsecgps.so
 
-#
-# OMX
-#
-PRODUCT_COPY_FILES += \
-    vendor/samsung/SPH-D700/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
-    vendor/samsung/SPH-D700/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so
 
 #
 # TV-Out
