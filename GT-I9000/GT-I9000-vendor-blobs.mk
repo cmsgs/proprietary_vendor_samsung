@@ -154,27 +154,28 @@ PRODUCT_COPY_FILES += \
 #
 # Samsung Media decoding libs
 #
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so 
-
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-I9000/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libstagefright_omx.so:system/lib/libstagefright_omx.so
 
 #
 # TESTING
