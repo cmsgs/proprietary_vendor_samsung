@@ -181,8 +181,7 @@ PRODUCT_COPY_FILES += \
 # TESTING
 #
 PRODUCT_COPY_FILES += \
-   vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so \
-   vendor/samsung/GT-I9000/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
+   vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so
 
 #
 # Sensors
