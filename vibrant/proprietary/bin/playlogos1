@@ -1,0 +1,56 @@
+#!/system/bin/sh
+#
+# File System Repair & Setup For the Behold 2 Galaxy port
+# eugene373@gmail.com (BH_MAN) w/ a2sd & Swap Support + 
+# Firstboot.sh & Battery.bin fix
+#
+
+mount -o rw,remount /dev/stl9 /system
+mount -o rw,remount rootfs /
+chmod 0777 /system
+chmod 0777 /system/app
+chmod 0777 /system/bin
+chmod 0777 /system/cameradata
+chmod 0777 /system/csc
+chmod 0777 /system/etc
+chmod 0777 /system/etc/dhcpcd
+chmod 0777 /system/etc/dhcpcd/dhcpcd-hooks
+chmod 0777 /system/etc/kies
+chmod 0777 /system/etc/melfas
+chmod 0777 /system/etc/permissions
+chmod 0777 /system/etc/ppp
+chmod 0777 /system/etc/security
+chmod 0777 /system/etc/wifi
+chmod 0777 /system/firmware
+chmod 0777 /system/fonts
+chmod 0777 /system/framework
+chmod 0777 /system/lib
+chmod 0777 /system/lib/egl
+chmod 0777 /system/lib/hw
+chmod 0777 /system/lib/bluez-plugin
+chmod 0777 /system/Aries
+chmod 0777 /system/media
+chmod 0777 /system/media/audio
+chmod 0777 /system/media/audio/alarms
+chmod 0777 /system/media/audio/notifications
+chmod 0777 /system/media/audio/ringtones
+chmod 0777 /system/media/audio/ui
+chmod 0777 /system/media/video
+chmod 0777 /system/media/video/shutdown
+chmod 0777 /system/usr
+chmod 0777 /system/usr/bluetooth
+chmod 0777 /system/usr/bluetooth/print
+chmod 0777 /system/usr/keychars
+chmod 0777 /system/usr/keylayout
+chmod 0777 /system/usr/share
+chmod 0777 /system/usr/share/alsa
+chmod 0777 /system/usr/share/alsa/cards
+chmod 0777 /system/usr/share/alsa/pcm
+chmod 0777 /system/usr/share/bmd
+chmod 0777 /system/usr/share/zoneinfo
+chmod 0777 /system/xbin
+
+busybox mount -o remount,rw -t rootfs /
+sh /system/bin/userinit.sh
+
+/system/bin/playlogosnow
