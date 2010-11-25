@@ -18,12 +18,12 @@
 # Prebuilt libraries that are needed to build open-source libraries
 #
 PRODUCT_COPY_FILES := \
-    vendor/samsung/GT-I9000/proprietary/lib/libgps.so:obj/lib/libgps.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:obj/lib/libtvout.so
+    vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:obj/lib/libtvout.so 
+#    vendor/samsung/GT-I9000/proprietary/lib/libgps.so:obj/lib/libgps.so 
+#    vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so 
 
 
 #
@@ -59,9 +59,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/gpsd/ed62f4e3.0:system/bin/gpsd/ed62f4e3.0 \
     vendor/samsung/GT-I9000/proprietary/bin/gpsd/f0b6e66f.0:system/bin/gpsd/f0b6e66f.0 \
     vendor/samsung/GT-I9000/proprietary/bin/gpsd/glgps_samsungJupiter:system/bin/gpsd/glgps_samsungJupiter \
-    vendor/samsung/GT-I9000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml \
-    vendor/samsung/GT-I9000/proprietary/lib/libgps.so:system/lib/libgps.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:system/lib/libsecgps.so 
+    vendor/samsung/GT-I9000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml 
+#    vendor/samsung/GT-I9000/proprietary/lib/libgps.so:system/lib/libgps.so \
+#    vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:system/lib/libsecgps.so 
+
+    
  
 #
 # WIFI
@@ -83,9 +85,9 @@ PRODUCT_COPY_FILES += \
 #
 # Bluetooth
 #
-PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/bin/npsmobex:system/bin/npsmobex \
-    vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld 
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/GT-I9000/proprietary/bin/npsmobex:system/bin/npsmobex \
+#    vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld 
 
 #
 # Grafics
@@ -154,34 +156,34 @@ PRODUCT_COPY_FILES += \
 #
 # Samsung Media decoding libs
 #
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so 
-
+PRODUCT_COPY_FILES += \
+    vendor/samsung/GT-I9000/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so
 
 #
 # TESTING
 #
 PRODUCT_COPY_FILES += \
-   vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so \
-   vendor/samsung/GT-I9000/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
+   vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so
 
 #
 # Sensors
