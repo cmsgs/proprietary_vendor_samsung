@@ -77,10 +77,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/GT-I9000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
     vendor/samsung/GT-I9000/proprietary/bin/dhcpcd:system/bin/dhcpcd \
     vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
-    vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so 
+    vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so
+#   vendor/samsung/GT-I9000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
 
 #
 # Bluetooth
