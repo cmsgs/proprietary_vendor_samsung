@@ -22,9 +22,6 @@ PRODUCT_COPY_FILES := \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so \
     vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:obj/lib/libtvout.so 
-#    vendor/samsung/GT-I9000/proprietary/lib/libgps.so:obj/lib/libgps.so 
-#    vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so 
-
 
 #
 # RIL
@@ -36,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/samsung/GT-I9000/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so
 
- 
 #
 # Firmware files
 #
@@ -60,10 +56,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/gpsd/f0b6e66f.0:system/bin/gpsd/f0b6e66f.0 \
     vendor/samsung/GT-I9000/proprietary/bin/gpsd/glgps_samsungJupiter:system/bin/gpsd/glgps_samsungJupiter \
     vendor/samsung/GT-I9000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml 
-#    vendor/samsung/GT-I9000/proprietary/lib/libgps.so:system/lib/libgps.so \
-#    vendor/samsung/GT-I9000/proprietary/lib/libsecgps.so:system/lib/libsecgps.so 
-
-    
  
 #
 # WIFI
@@ -77,10 +69,21 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/GT-I9000/proprietary/bin/dhcpcd:system/bin/dhcpcd \
-    vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
-    vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so
+    vendor/samsung/GT-I9000/proprietary/bin/mfgloader:system/bin/mfgloader
+#   vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
+#   vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so
 #   vendor/samsung/GT-I9000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
+
+#
+# DHCPD
+#
+# PRODUCT_COPY_FILES += \
+#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
+#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
+#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
+#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured \
+#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks
+#   vendor/samsung/GT-I9000/proprietary/bin/dhcpcd:system/bin/dhcpcd \
 
 #
 # Bluetooth
@@ -90,7 +93,7 @@ PRODUCT_COPY_FILES += \
 #    vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld 
 
 #
-# Grafics
+# Graphics
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit \
@@ -103,7 +106,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
     vendor/samsung/GT-I9000/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so
 
-
 #
 # Samsung binary crap
 #
@@ -111,24 +113,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
     vendor/samsung/GT-I9000/proprietary/bin/killmediaserver:system/bin/killmediaserver \
     vendor/samsung/GT-I9000/proprietary/bin/logwrapper:system/bin/logwrapper \
-    vendor/samsung/GT-I9000/proprietary/bin/mfgloader:system/bin/mfgloader \
-    vendor/samsung/GT-I9000/proprietary/bin/notified_event:system/bin/notified_event \
-    vendor/samsung/GT-I9000/proprietary/bin/vold:system/bin/vold \
-    vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
-
+    vendor/samsung/GT-I9000/proprietary/bin/notified_event:system/bin/notified_event
+#   vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
 
 #
-# Samsung config
+# Vold
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-    vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
-    vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
-    vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured \
-    vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks
+    vendor/samsung/GT-I9000/proprietary/bin/vold:system/bin/vold
 
 #
-# camera
+# Camera
 #
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
@@ -204,13 +199,12 @@ PRODUCT_COPY_FILES += \
 #
 # investigation needed
 #
-
 PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/bin/drexe:system/bin/drexe \
-    vendor/samsung/GT-I9000/proprietary/bin/immvibed:system/bin/immvibed \
     vendor/samsung/GT-I9000/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so
+#   vendor/samsung/GT-I9000/proprietary/bin/drexe:system/bin/drexe \
+#   vendor/samsung/GT-I9000/proprietary/bin/immvibed:system/bin/immvibed \
 
 #
 # Files for battery charging screen
