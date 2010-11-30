@@ -88,9 +88,11 @@ PRODUCT_COPY_FILES += \
 #
 # Bluetooth
 #
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
+     vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld 
+#    vendor/samsung/GT-I9000/proprietary/bin/bluetoothd:system/bin/bluetoothd \ 
 #    vendor/samsung/GT-I9000/proprietary/bin/npsmobex:system/bin/npsmobex \
-#    vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld 
+
 
 #
 # Graphics
