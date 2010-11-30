@@ -116,7 +116,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/killmediaserver:system/bin/killmediaserver \
     vendor/samsung/GT-I9000/proprietary/bin/logwrapper:system/bin/logwrapper \
     vendor/samsung/GT-I9000/proprietary/bin/notified_event:system/bin/notified_event
-#   vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
+    vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
 
 #
 # Vold
