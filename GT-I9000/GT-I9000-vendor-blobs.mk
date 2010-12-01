@@ -63,36 +63,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
-    vendor/samsung/GT-I9000/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
-    vendor/samsung/GT-I9000/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/GT-I9000/proprietary/bin/mfgloader:system/bin/mfgloader
-#   vendor/samsung/GT-I9000/proprietary/bin/wlservice:system/bin/wlservice \
-#   vendor/samsung/GT-I9000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so
-#   vendor/samsung/GT-I9000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
-
-#
-# DHCPD
-#
-# PRODUCT_COPY_FILES += \
-#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
-#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
-#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured \
-#   vendor/samsung/GT-I9000/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks
-#   vendor/samsung/GT-I9000/proprietary/bin/dhcpcd:system/bin/dhcpcd \
-
-#
-# Bluetooth
-#
-#PRODUCT_COPY_FILES += \
-#     vendor/samsung/GT-I9000/proprietary/bin/btld:system/bin/btld 
-#    vendor/samsung/GT-I9000/proprietary/bin/bluetoothd:system/bin/bluetoothd \ 
-#    vendor/samsung/GT-I9000/proprietary/bin/npsmobex:system/bin/npsmobex \
-
+    vendor/samsung/GT-I9000/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 #
 # Graphics
@@ -112,11 +87,11 @@ PRODUCT_COPY_FILES += \
 # Samsung binary crap
 #
 PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
     vendor/samsung/GT-I9000/proprietary/bin/killmediaserver:system/bin/killmediaserver \
     vendor/samsung/GT-I9000/proprietary/bin/logwrapper:system/bin/logwrapper \
     vendor/samsung/GT-I9000/proprietary/bin/notified_event:system/bin/notified_event
     vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
+#   vendor/samsung/GT-I9000/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
 
 #
 # Vold
@@ -136,7 +111,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
     vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
     vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
-#   vendor/samsung/GT-I9000/proprietary/lib/libarccamera.so:system/lib/libcameraservice.so \
 
 #
 # TVOUT
@@ -177,12 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so
 
 #
-# TESTING
-#
-PRODUCT_COPY_FILES += \
-   vendor/samsung/GT-I9000/proprietary/lib/libhardware.so:system/lib/libhardware.so
-
-#
 # Sensors
 #
 PRODUCT_COPY_FILES += \
@@ -205,8 +173,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so
-#   vendor/samsung/GT-I9000/proprietary/bin/drexe:system/bin/drexe \
-#   vendor/samsung/GT-I9000/proprietary/bin/immvibed:system/bin/immvibed \
 
 #
 # Files for battery charging screen
