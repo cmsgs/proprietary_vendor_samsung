@@ -66,8 +66,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/GT-I9000/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
-    vendor/samsung/GT-I9000/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
-    vendor/samsung/GT-I9000/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    vendor/samsung/GT-I9000/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf
 
 #
 # Graphics
