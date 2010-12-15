@@ -147,7 +147,9 @@ vendor/samsung/SPH-D700/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veom
 vendor/samsung/SPH-D700/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
 vendor/samsung/SPH-D700/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
 vendor/samsung/SPH-D700/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
-vendor/samsung/SPH-D700/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so
+vendor/samsung/SPH-D700/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so \
+vendor/samsung/SPH-D700/proprietary/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
+vendor/samsung/SPH-D700/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so
 
 #
 # TV-Out
