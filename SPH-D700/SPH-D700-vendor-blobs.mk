@@ -44,16 +44,6 @@ vendor/samsung/SPH-D700/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant
 vendor/samsung/SPH-D700/proprietary/bin/wlservice:system/bin/wlservice \
 vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
 vendor/samsung/SPH-D700/proprietary/bin/mfgloader:system/bin/mfgloader \
-vendor/samsung/SPH-D700/proprietary/bin/hciattach:system/bin/hciattach \
-vendor/samsung/SPH-D700/proprietary/bin/btld:system/bin/btld \
-vendor/samsung/SPH-D700/proprietary/bin/bluetoothd:system/bin/bluetoothd \
-vendor/samsung/SPH-D700/proprietary/lib/libbluetooth.so:system/lib/libbluetooth.so \
-vendor/samsung/SPH-D700/proprietary/lib/libbluetoothd.so:system/lib/libbluetoothd.so \
-vendor/samsung/SPH-D700/proprietary/lib/libbluedroid.so:system/lib/libbluedroid.so \
-vendor/samsung/SPH-D700/proprietary/lib/libdbus.so:system/lib/libdbus.so \
-vendor/samsung/SPH-D700/proprietary/lib/bluez-plugin/audio.so:system/lib/bluez-plugin/audio.so \
-vendor/samsung/SPH-D700/proprietary/lib/bluez-plugin/input.so:system/lib/bluez-plugin/input.so \
-vendor/samsung/SPH-D700/proprietary/bin/sdptool:system/bin/sdptool \
 vendor/samsung/SPH-D700/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
 vendor/samsung/SPH-D700/proprietary/bin/wlservice:system/bin/wlservice
 
