@@ -16,12 +16,9 @@
 
 # Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
-vendor/samsung/SPH-D700/proprietary/lib/libgps.so:obj/lib/libgps.so \
-vendor/samsung/SPH-D700/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so \
 vendor/samsung/SPH-D700/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
 vendor/samsung/SPH-D700/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so \
-vendor/samsung/SPH-D700/proprietary/lib/libtvout.so:obj/lib/libtvout.so \
-vendor/samsung/SPH-D700/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so
+vendor/samsung/SPH-D700/proprietary/lib/libtvout.so:obj/lib/libtvout.so
 
 
 
@@ -32,31 +29,11 @@ PRODUCT_COPY_FILES += \
 vendor/samsung/SPH-D700/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
 vendor/samsung/SPH-D700/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
 vendor/samsung/SPH-D700/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin \
-vendor/samsung/SPH-D700/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin \
 vendor/samsung/SPH-D700/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin \
 vendor/samsung/SPH-D700/proprietary/etc/wifi/wifi.conf:system/etc/wifi/wifi.conf \
 vendor/samsung/SPH-D700/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-vendor/samsung/SPH-D700/proprietary/lib/libwibropath.so:system/lib/libwibropath.so \
-vendor/samsung/SPH-D700/proprietary/lib/libwlservice.so:system/lib/libwlservice.so \
-vendor/samsung/SPH-D700/proprietary/lib/libwifitest.so:system/lib/libwifitest.so \
-vendor/samsung/SPH-D700/proprietary/lib/libwpa_client.so:system/lib/libwpa_client.so \
-vendor/samsung/SPH-D700/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant \
-vendor/samsung/SPH-D700/proprietary/bin/wlservice:system/bin/wlservice \
-vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd \
-vendor/samsung/SPH-D700/proprietary/bin/mfgloader:system/bin/mfgloader \
-vendor/samsung/SPH-D700/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
-vendor/samsung/SPH-D700/proprietary/bin/wlservice:system/bin/wlservice
+vendor/samsung/SPH-D700/proprietary/bin/BCM4329B1_002.002.023.0417.0430.hcd:system/bin/BCM4329B1_002.002.023.0417.0430.hcd
 
-#
-# DHCPCD
-#
-PRODUCT_COPY_FILES += \
-vendor/samsung/SPH-D700/proprietary/bin/dhcpcd:system/bin/dhcpcd \
-vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test \
-vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf \
-vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured \
-vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks \
-vendor/samsung/SPH-D700/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf
 #
 # Firmware files
 #
