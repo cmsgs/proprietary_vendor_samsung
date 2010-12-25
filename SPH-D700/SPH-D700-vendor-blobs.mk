@@ -197,6 +197,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/SPH-D700/proprietary/lib/libhardware.so:system/lib/libhardware.so \
 	vendor/samsung/SPH-D700/proprietary/bin/vold:system/bin/vold \
     vendor/samsung/SPH-D700/proprietary/bin/notified_event:system/bin/notified_event \
+	vendor/samsung/SPH-D700/proprietary/bin/dhcpcd:system/bin/dhcpcd \
 	vendor/samsung/SPH-D700/proprietary/lib/libnetutils.so:system/lib/libnetutils.so
 
 #
