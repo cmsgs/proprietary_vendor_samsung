@@ -20,7 +20,6 @@
 PRODUCT_COPY_FILES := \
     vendor/samsung/GT-I9000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so \
     vendor/samsung/GT-I9000/proprietary/lib/libtvout.so:obj/lib/libtvout.so 
 
 #
@@ -79,7 +78,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so \
     vendor/samsung/GT-I9000/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
     vendor/samsung/GT-I9000/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so
+    vendor/samsung/GT-I9000/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
+    vendor/samsung/GT-I9000/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so
 
 #
 # Samsung binary crap
@@ -89,7 +91,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/logwrapper:system/bin/logwrapper \
     vendor/samsung/GT-I9000/proprietary/bin/notified_event:system/bin/notified_event
     vendor/samsung/GT-I9000/proprietary/xbin/su:system/xbin/su
-#   vendor/samsung/GT-I9000/proprietary/bin/dbus-daemon:system/bin/dbus-daemon \
 
 #
 # Vold
@@ -106,9 +107,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/GT-I9000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
     vendor/samsung/GT-I9000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+#   vendor/samsung/GT-I9000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
     vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+    vendor/samsung/GT-I9000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
 
 #
 # TVOUT
@@ -123,32 +124,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/bin/tvoutserver:system/bin/tvoutserver 
 
 #
-# Samsung Media decoding libs
-#
-PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/lib/libs263domxoc.so:system/lib/libs263domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs263eomxoc.so:system/lib/libs263eomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs264domxoc.so:system/lib/libs264domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libs264eomxoc.so:system/lib/libs264eomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsaacdomxoc.so:system/lib/libsaacdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsaaceomxoc.so:system/lib/libsaaceomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsac3domxoc.so:system/lib/libsac3domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsamrdomxoc.so:system/lib/libsamrdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsamreomxoc.so:system/lib/libsamreomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsdiv3domxoc.so:system/lib/libsdiv3domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsflacdomxoc.so:system/lib/libsflacdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp3domxoc.so:system/lib/libsmp3domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp4fmocn.so:system/lib/libsmp4fmocn.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp4vdomxoc.so:system/lib/libsmp4vdomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsmp4veomxoc.so:system/lib/libsmp4veomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsvc1domxoc.so:system/lib/libsvc1domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libswmadomxoc.so:system/lib/libswmadomxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libswmv7domxoc.so:system/lib/libswmv7domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libswmv8domxoc.so:system/lib/libswmv8domxoc.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so
-
-#
 # Sensors
 #
 PRODUCT_COPY_FILES += \
@@ -159,18 +134,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/GT-I9000/proprietary/lib/libsensor_yamaha.so:system/lib/libsensor_yamaha.so \
     vendor/samsung/GT-I9000/proprietary/lib/libsensor_yamaha_test.so:system/lib/libsensor_yamaha_test.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/GT-I9000/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so \
     vendor/samsung/GT-I9000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so
-
-#
-# investigation needed
-#
-PRODUCT_COPY_FILES += \
-    vendor/samsung/GT-I9000/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so \
-    vendor/samsung/GT-I9000/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so
 
 #
 # Files for battery charging screen
