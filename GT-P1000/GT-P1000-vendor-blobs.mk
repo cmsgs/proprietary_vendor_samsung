@@ -19,7 +19,8 @@
 #
 
 
-PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:obj/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so     vendor/samsung/GT-P1000/proprietary/lib/libgps.so:obj/lib/libgps.so     vendor/samsung/GT-P1000/proprietary/lib/libsecgps.so:obj/lib/libsecgps.so 
+PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:obj/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so
+
 
 #
 # RIL
@@ -29,7 +30,7 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-clie
 #
 # GPS
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/gpsd/66ca3eb6.0:system/bin/gpsd/66ca3eb6.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/7651b327.0:system/bin/gpsd/7651b327.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/803ca020.0:system/bin/gpsd/803ca020.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/8c7fccef.0:system/bin/gpsd/8c7fccef.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/c9dbfc2e.0:system/bin/gpsd/c9dbfc2e.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/ddc328ff.0:system/bin/gpsd/ddc328ff.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/ed62f4e3.0:system/bin/gpsd/ed62f4e3.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/f0b6e66f.0:system/bin/gpsd/f0b6e66f.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/glgps_samsungJupiter:system/bin/gpsd/glgps_samsungJupiter     vendor/samsung/GT-P1000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml     vendor/samsung/GT-P1000/proprietary/lib/libgps.so:system/lib/libgps.so     vendor/samsung/GT-P1000/proprietary/lib/libsecgps.so:system/lib/libsecgps.so 
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/gpsd/66ca3eb6.0:system/bin/gpsd/66ca3eb6.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/7651b327.0:system/bin/gpsd/7651b327.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/803ca020.0:system/bin/gpsd/803ca020.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/8c7fccef.0:system/bin/gpsd/8c7fccef.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/c9dbfc2e.0:system/bin/gpsd/c9dbfc2e.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/ddc328ff.0:system/bin/gpsd/ddc328ff.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/ed62f4e3.0:system/bin/gpsd/ed62f4e3.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/f0b6e66f.0:system/bin/gpsd/f0b6e66f.0     vendor/samsung/GT-P1000/proprietary/bin/gpsd/glgps_samsungJupiter:system/bin/gpsd/glgps_samsungJupiter     vendor/samsung/GT-P1000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml
 
  
 #
@@ -75,16 +76,11 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.s
 PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libtvoutservice.so:system/lib/libtvoutservice.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:system/lib/libtvout.so     vendor/samsung/GT-P1000/proprietary/lib/lib_tvoutengine.so:system/lib/lib_tvoutengine.so     vendor/samsung/GT-P1000/proprietary/lib/libtvoutfimc.so:system/lib/libtvoutfimc.so     vendor/samsung/GT-P1000/proprietary/lib/libtvouthdmi.so:system/lib/libtvouthdmi.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout_jni.so:system/lib/libtvout_jni.so     vendor/samsung/GT-P1000/proprietary/lib/libedid.so:system/lib/libedid.so     vendor/samsung/GT-P1000/proprietary/lib/libddc.so:system/lib/libddc.so     vendor/samsung/GT-P1000/proprietary/bin/tvoutserver:system/bin/tvoutserver 
 
 
-#
-# TESTING
-#
-PRODUCT_COPY_FILES +=    vendor/samsung/GT-P1000/proprietary/lib/libhardware.so:system/lib/libhardware.so    vendor/samsung/GT-P1000/proprietary/lib/libhardware_legacy.so:system/lib/libhardware_legacy.so
-
 
 #
-# Sensors
+# Hw support
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so     vendor/samsung/GT-P1000/proprietary/bin/akmd2:system/bin/akmd2
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so
 
 #
 # Files for battery charging screen
