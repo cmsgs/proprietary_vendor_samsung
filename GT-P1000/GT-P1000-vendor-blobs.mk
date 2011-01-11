@@ -19,8 +19,7 @@
 #
 
 
-PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:obj/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so
-
+PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:obj/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so
 
 #
 # RIL
@@ -35,17 +34,12 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/gpsd/66ca3eb6.
 # use the one from prebuilt
 #    vendor/samsung/GT-P1000/proprietary/etc/jupiter.xml:system/etc/jupiter.xml
 
- 
+
 #
 # WIFI
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd     vendor/samsung/GT-P1000/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin     vendor/samsung/GT-P1000/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin     vendor/samsung/GT-P1000/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_mfg_lna.txt:system/etc/wifi/nvram_mfg_lna.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_mfg_nolna.txt:system/etc/wifi/nvram_mfg_nolna.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net_2G.txt:system/etc/wifi/nvram_net_2G.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net_lna.txt:system/etc/wifi/nvram_net_lna.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net_nolna.txt:system/etc/wifi/nvram_net_nolna.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi.conf:system/etc/wifi.conf     vendor/samsung/GT-P1000/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant     vendor/samsung/GT-P1000/proprietary/bin/dhcpcd:system/bin/dhcpcd     vendor/samsung/GT-P1000/proprietary/bin/wlservice:system/bin/wlservice     vendor/samsung/GT-P1000/proprietary/lib/libwlservice.so:system/lib/libwlservice.so
-
-
-#
-# Bluetooth
-#
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/npsmobex:system/bin/npsmobex     vendor/samsung/GT-P1000/proprietary/bin/btld:system/bin/btld 
+# mfg loader can be used to load different nvram_mfg
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/BCM4329B1_002.002.023.0534.0590.hcd:system/bin/BCM4329B1_002.002.023.0534.0590.hcd     vendor/samsung/GT-P1000/proprietary/etc/wifi/bcm4329_aps.bin:system/etc/wifi/bcm4329_aps.bin     vendor/samsung/GT-P1000/proprietary/etc/wifi/bcm4329_mfg.bin:system/etc/wifi/bcm4329_mfg.bin     vendor/samsung/GT-P1000/proprietary/etc/wifi/bcm4329_sta.bin:system/etc/wifi/bcm4329_sta.bin     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_mfg_lna.txt:system/etc/wifi/nvram_mfg_lna.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_mfg_nolna.txt:system/etc/wifi/nvram_mfg_nolna.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net_2G.txt:system/etc/wifi/nvram_net_2G.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net_lna.txt:system/etc/wifi/nvram_net_lna.txt     vendor/samsung/GT-P1000/proprietary/etc/wifi/nvram_net_nolna.txt:system/etc/wifi/nvram_net_nolna.txt     vendor/samsung/GT-P1000/proprietary/bin/mfgloader:system/bin/mfgloader     vendor/samsung/GT-P1000/proprietary/etc/wifi.conf:system/etc/wifi.conf
 
 #
 # Graphics/GL driver
@@ -56,23 +50,15 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/pvrsrvinit:sys
 #
 # Samsung binary crap
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/dbus-daemon:system/bin/dbus-daemon     vendor/samsung/GT-P1000/proprietary/bin/killmediaserver:system/bin/killmediaserver     vendor/samsung/GT-P1000/proprietary/bin/logwrapper:system/bin/logwrapper     vendor/samsung/GT-P1000/proprietary/bin/mfgloader:system/bin/mfgloader     vendor/samsung/GT-P1000/proprietary/bin/notified_event:system/bin/notified_event     vendor/samsung/GT-P1000/proprietary/bin/vold:system/bin/vold     vendor/samsung/GT-P1000/proprietary/xbin/su:system/xbin/su
-
-
-
-#
-# Samsung config
-#
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf     vendor/samsung/GT-P1000/proprietary/etc/dhcpcd/dhcpcd-hooks/01-test:system/etc/dhcpcd/dhcpcd-hooks/01-test     vendor/samsung/GT-P1000/proprietary/etc/dhcpcd/dhcpcd-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-hooks/20-dns.conf     vendor/samsung/GT-P1000/proprietary/etc/dhcpcd/dhcpcd-hooks/95-configured:system/etc/dhcpcd/dhcpcd-hooks/95-configured     vendor/samsung/GT-P1000/proprietary/etc/dhcpcd/dhcpcd-run-hooks:system/etc/dhcpcd/dhcpcd-run-hooks
-
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/killmediaserver:system/bin/killmediaserver     vendor/samsung/GT-P1000/proprietary/bin/logwrapper:system/bin/logwrapper     vendor/samsung/GT-P1000/proprietary/bin/notified_event:system/bin/notified_event     vendor/samsung/GT-P1000/proprietary/xbin/su:system/xbin/su
 
 #
 # camera
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:system/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so     vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv #   vendor/samsung/GT-P1000/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:system/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so     vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
-
-
+# failing to load zygote with this one, what is missing?
+#    vendor/samsung/GT-P1000/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so 
 #
 # TVOUT
 #
@@ -86,7 +72,7 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/copybit.s5p
 #
 # Files for battery charging screen
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/playlpm:system/bin/playlpm     vendor/samsung/GT-P1000/proprietary/bin/charging_mode:system/bin/charging_mode     vendor/samsung/GT-P1000/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg     vendor/samsung/GT-P1000/proprietary/media/bootani.qmg:system/media/bootani.qmg     vendor/samsung/GT-P1000/proprietary/media/chargingwarning_disconnected.qmg:system/media/chargingwarning_disconnected.qmg     vendor/samsung/GT-P1000/proprietary/media/chargingwarning_temp.qmg:system/media/chargingwarning_temp.qmg     vendor/samsung/GT-P1000/proprietary/media/samsungani.qmg:system/media/samsungani.qmg     vendor/samsung/GT-P1000/proprietary/media/usb_not_charging.qmg:system/media/usb_not_charging.qmg
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/playlpm:system/bin/playlpm     vendor/samsung/GT-P1000/proprietary/bin/charging_mode:system/bin/charging_mode     vendor/samsung/GT-P1000/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so     vendor/samsung/GT-P1000/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg     vendor/samsung/GT-P1000/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg     vendor/samsung/GT-P1000/proprietary/media/chargingwarning_disconnected.qmg:system/media/chargingwarning_disconnected.qmg     vendor/samsung/GT-P1000/proprietary/media/chargingwarning_temp.qmg:system/media/chargingwarning_temp.qmg     vendor/samsung/GT-P1000/proprietary/media/usb_not_charging.qmg:system/media/usb_not_charging.qmg
 
 #
 # Keyboard
