@@ -19,7 +19,7 @@
 #
 
 
-PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:obj/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:obj/lib/libs3cjpeg.so
+PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:obj/lib/libcamera.so
 
 #
 # RIL
@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libtvoutservic
 #
 # Hw support
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/copybit.s5pc110.so:system/lib/hw/copybit.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so
 
 #
 # Files for battery charging screen
