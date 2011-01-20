@@ -55,7 +55,7 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/killmediaserve
 #
 # camera
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:system/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so     vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:system/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so     vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
 # failing to load zygote with this one, what is missing?
 #    vendor/samsung/GT-P1000/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so 
@@ -67,8 +67,7 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libtvoutservic
 #
 # Hw support
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so     vendor/samsung/GT-P1000/proprietary/lib/hw/lights.s5pc110.so:system/lib/hw/lights.s5pc110.so
-
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
 #
 # Files for battery charging screen
 #
