@@ -19,7 +19,7 @@
 #
 
 
-PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:obj/lib/libcamera.so
+PRODUCT_COPY_FILES :=     vendor/samsung/GT-P1000/proprietary/lib/libsecril-client.so:obj/lib/libsecril-client.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:obj/lib/libtvout.so
 
 #
 # RIL
@@ -44,8 +44,9 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/BCM4329B1_002.
 #
 # Graphics/GL driver
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit     vendor/samsung/GT-P1000/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg     vendor/samsung/GT-P1000/proprietary/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so     vendor/samsung/GT-P1000/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so     vendor/samsung/GT-P1000/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so     vendor/samsung/GT-P1000/proprietary/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so     vendor/samsung/GT-P1000/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so     vendor/samsung/GT-P1000/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so     vendor/samsung/GT-P1000/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so     vendor/samsung/GT-P1000/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so     vendor/samsung/GT-P1000/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so     vendor/samsung/GT-P1000/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so     vendor/samsung/GT-P1000/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/pvrsrvinit:system/bin/pvrsrvinit     vendor/samsung/GT-P1000/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg     vendor/samsung/GT-P1000/proprietary/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so     vendor/samsung/GT-P1000/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so     vendor/samsung/GT-P1000/proprietary/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so     vendor/samsung/GT-P1000/proprietary/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so     vendor/samsung/GT-P1000/proprietary/lib/libIMGegl.so:system/lib/libIMGegl.so     vendor/samsung/GT-P1000/proprietary/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so     vendor/samsung/GT-P1000/proprietary/lib/libpvr2d.so:system/lib/libpvr2d.so     vendor/samsung/GT-P1000/proprietary/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so     vendor/samsung/GT-P1000/proprietary/lib/libsrv_um.so:system/lib/libsrv_um.so     vendor/samsung/GT-P1000/proprietary/lib/libsrv_init.so:system/lib/libsrv_init.so     vendor/samsung/GT-P1000/proprietary/lib/libglslcompiler.so:system/lib/libglslcompiler.so     vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
 
+#PRODUCT_COPY_FILES += #    vendor/samsung/GT-P1000/proprietary/crespo_egl/bin/pvrsrvinit:system/bin/pvrsrvinit #    vendor/samsung/GT-P1000/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/egl/libEGL_POWERVR_SGX540_120.so:system/lib/egl/libEGL_POWERVR_SGX540_120.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/lib/egl/libGLESv2_POWERVR_SGX540_120.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libIMGegl.so:system/lib/libIMGegl.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libpvr2d.so:system/lib/libpvr2d.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libusc.so:system/lib/libusc.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libsrv_um.so:system/lib/libsrv_um.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libsrv_init.so:system/lib/libsrv_init.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/libglslcompiler.so:system/lib/libglslcompiler.so #    vendor/samsung/GT-P1000/proprietary/crespo_egl/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
 
 #
 # Samsung binary crap
@@ -55,19 +56,13 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/killmediaserve
 #
 # camera
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so     vendor/samsung/GT-P1000/proprietary/lib/libcamera.so:system/lib/libcamera.so     vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so     vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so     vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
-# failing to load zygote with this one, what is missing?
-#    vendor/samsung/GT-P1000/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so 
 #
 # TVOUT
 #
 PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libtvoutservice.so:system/lib/libtvoutservice.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout.so:system/lib/libtvout.so     vendor/samsung/GT-P1000/proprietary/lib/lib_tvoutengine.so:system/lib/lib_tvoutengine.so     vendor/samsung/GT-P1000/proprietary/lib/libtvoutfimc.so:system/lib/libtvoutfimc.so     vendor/samsung/GT-P1000/proprietary/lib/libtvouthdmi.so:system/lib/libtvouthdmi.so     vendor/samsung/GT-P1000/proprietary/lib/libtvout_jni.so:system/lib/libtvout_jni.so     vendor/samsung/GT-P1000/proprietary/lib/libedid.so:system/lib/libedid.so     vendor/samsung/GT-P1000/proprietary/lib/libddc.so:system/lib/libddc.so     vendor/samsung/GT-P1000/proprietary/bin/tvoutserver:system/bin/tvoutserver
 
-#
-# Hw support
-#
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so     vendor/samsung/GT-P1000/proprietary/lib/hw/gralloc.s5pc110.so:system/lib/hw/gralloc.s5pc110.so
 #
 # Files for battery charging screen
 #
