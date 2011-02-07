@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/bin/killmediaserve
 #
 # camera
 #
-PRODUCT_COPY_FILES +=     vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so     vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so     vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv     vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
+#PRODUCT_COPY_FILES += #    vendor/samsung/GT-P1000/proprietary/lib/libarccamera.so:system/lib/libarccamera.so #    vendor/samsung/GT-P1000/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so #    vendor/samsung/GT-P1000/proprietary/lib/libseccamera.so:system/lib/libseccamera.so #    vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv #    vendor/samsung/GT-P1000/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv
 
 #
 # TVOUT
